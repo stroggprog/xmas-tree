@@ -18,13 +18,19 @@ There is also `tree-off.py`, a simple script to turn off a tree that for some re
 # Purpose
 I like automating stuff. I have a cron job that runs the python script on Dec 1st:
 ```
-0 0 1 12 * /home/pi/xmas-tree/randomsparkles.py #enable xmas tree lights
+0 0 1 12 * /path/to/xmas-tree/randomsparkles.py #enable xmas tree lights
 ```
 
 I have another that turns the tree off on Jan 6th:
 ```
 0 0 6 1 * /usr/bin/killall -s SIGINT randomsparkles.py
 ```
+
+There is another shell script `check-tree-on.sh` which is also meant to be used in a reboot macro in cron:
+```
+@reboot /path/to/check-tree-on.sh
+```
+This script checks if the date is Dec 1st or later, or Jan 5th or earlier. If so, it starts the `randomsparkles.py` script. This ensures the script is running after a reboot between these dates.
 
 The script `xmas-tree-kill.sh` is provided mainly for completeness, even though I don't use it myself.
 

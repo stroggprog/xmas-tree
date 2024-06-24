@@ -15,6 +15,7 @@ In addition, there is a bash script `xmas-tree-kill.sh`, which will send a SIGIN
 
 # Purpose
 I like automating stuff. I have a cron job that runs the python script on Dec 1st:
+
 ```0 0 1 12 * /home/pi/xmas-tree/randomsparkles.py #enable xmas tree lights```
 
 I have another that turns the tree off on Jan 6th:

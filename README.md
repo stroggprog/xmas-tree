@@ -13,6 +13,8 @@ This is a modified version of `randomsparkles.py` from the example folder in [Th
 
 In addition, there is a bash script `xmas-tree-kill.sh`, which will send a SIGINT to the tree to enforce a graceful shutdown.
 
+There is also `tree-off.py`, a simple script to turn off a tree that for some reason is still switched on without any scripts running to control it.
+
 # Purpose
 I like automating stuff. I have a cron job that runs the python script on Dec 1st:
 ```

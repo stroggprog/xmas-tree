@@ -1,3 +1,3 @@
 #!/usr/bin/bash
-/usr/bin/killall -s SIGINT randomsparkles.py
+kill -s SIGINT random_sparkles.py
 

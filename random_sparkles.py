@@ -24,9 +24,9 @@ try:
       pixel = random.choice(tree)
 
       # random.random() generates a random decimal number between 0 and 1. 
-      # If the number generated is greater than 0.5 then the selected pixel will be set to a random colour.
+      # If the number generated is greater than 0.1 then the selected pixel will be set to a random colour.
       # Otherwise the pixel will be turned off.
-      if random.random() > 0.5:
+      if random.random() > 0.1:
         pixel.color = random_color()
       else:
         pixel.off()
